@@ -90,9 +90,19 @@ export default function Home() {
                 button.appendChild(ripple)
                 setTimeout(() => ripple.remove(), 600)
               }}
-              className="px-8 py-4 border-2 border-slate-400/30 rounded-full font-semibold text-slate-50 backdrop-blur-sm bg-white/5 hover:bg-white/15 theme-dark:hover:border-amber-300/80 theme-light:hover:border-sky-500/80 theme-dark:hover:shadow-[0_14px_36px_rgba(251,191,36,0.45)] theme-light:hover:shadow-[0_14px_36px_rgba(14,165,233,0.42)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+              className="hero-cta hero-cta-primary group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-8 py-4 font-semibold tracking-[0.02em] transition-all duration-300 cursor-pointer"
             >
-              View My Work
+              <span className="hero-cta-sheen" aria-hidden="true"></span>
+              <span className="relative z-10">View My Work</span>
+              <svg
+                className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.9} d="M9 5l7 7-7 7" />
+              </svg>
             </button>
 
             <button
@@ -100,9 +110,24 @@ export default function Home() {
                 const element = document.querySelector('#contact')
                 element?.scrollIntoView({ behavior: 'smooth' })
               }}
-              className="px-8 py-4 border-2 border-slate-400/30 rounded-full font-semibold text-slate-50 backdrop-blur-sm bg-white/5 hover:bg-white/15 theme-dark:hover:border-amber-300/80 theme-light:hover:border-sky-500/80 theme-dark:hover:shadow-[0_14px_36px_rgba(251,191,36,0.45)] theme-light:hover:shadow-[0_14px_36px_rgba(14,165,233,0.42)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+              className="hero-cta hero-cta-secondary group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-8 py-4 font-semibold tracking-[0.02em] transition-all duration-300 cursor-pointer"
             >
-              Get In Touch
+              <span className="hero-cta-sheen" aria-hidden="true"></span>
+              <span className="relative z-10">Get In Touch</span>
+              <svg
+                className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.9}
+                  d="M4 12h16m0 0l-5-5m5 5l-5 5"
+                />
+              </svg>
             </button>
           </div>
         </div>

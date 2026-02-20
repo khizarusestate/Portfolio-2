@@ -34,7 +34,7 @@ export default function Contact() {
         throw new Error('Please enter a valid email address.')
       }
 
-      const response = await fetch('https://portfolio2-server.vercel.app/api/contact', {
+      const response = await fetch('http://localhost:5000/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
