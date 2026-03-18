@@ -324,7 +324,7 @@ export default function Contact() {
                     <span className="min-w-0 break-all group-hover:underline">Mail me</span>
                   </a>
                   <a
-                    href="tel:+923277522098"
+                    href="tel:+923256776142"
                     className="group flex items-start gap-3 theme-dark:text-slate-300 theme-light:text-sky-700 hover:text-slate-200 transition-all duration-300 p-3 rounded-lg border border-transparent hover:bg-white/5 theme-dark:hover:border-amber-400/40 theme-light:hover:border-sky-600/40"
                   >
                     <svg
