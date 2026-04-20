@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   build: {
     rollupOptions: {
+      external: ['framer-motion'],
       output: {
         manualChunks: {
           'framer-motion': ['framer-motion']
